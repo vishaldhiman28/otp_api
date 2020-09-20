@@ -1,0 +1,21 @@
+{
+  "name": "contact_app_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.6",
+    "twilio": "^3.49.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
