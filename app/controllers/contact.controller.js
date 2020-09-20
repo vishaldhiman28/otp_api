@@ -54,13 +54,15 @@ exports.insertHistory = (req,res) => {
     .create({
         body: json_data['text'],    
         from: from,
-        to: json_data['to']
+        to: json_data['to'],
+        name: json_data['name']
     })
     .then(message =>{
         const message_db = new MessageHistory({
             'body': message['body'],
             'to':  message['to'],
-            'date_sent': message['dateCreated']
+            'date_sent': message['dateCreated'],
+            'name': message['name']
           });
     
           message_db.save()
