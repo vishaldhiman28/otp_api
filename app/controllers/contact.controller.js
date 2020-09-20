@@ -76,7 +76,7 @@ exports.insertHistory = (req,res) => {
 };
 
 exports.findAllHistory = (req,res)=>{
-    MessageHistory.find()
+    MessageHistory.find().sort({date_sent: 'desc'})
     .then(msgHistory => {
         res.send(msgHistory);
     }).catch(err => {
