@@ -25,7 +25,7 @@ mongoose.connect(dbConfig.url, {
 });
 
 app.get('/', (req, res) => {
-    res.json({"message": "Welcome to EasyNotes application. Take notes quickly. Organize and keep track of all your notes."});
+    res.json({"message": "Welcome to AirL API"});
 });
 
 require('./app/routes/contact.routes')(app);
